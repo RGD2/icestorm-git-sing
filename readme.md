@@ -3,10 +3,10 @@
 This repo is a simple, relatively safe and quick way to build the icestorm FPGA tools 'like the devs do' from basically any OS, without having to follow long, tedius instructions.
 
 It uses Singularity as a container environment so you don't need to think/worry about the OS or dependancy installations.
-It neesd about 13 GB of disk space to run, however, and from scratch might take you half and hour or so, in total, depending on your computer and internet connection performance.
+It needs about 13 GB of disk space to run, however, and from scratch might take you half and hour or so, in total, depending on your computer and internet connection performance.
 
 This includes icestorm, yosys, arachne-pnr and icotools, all of which are the latest git versions.
-This uses a Ubuntu 16.04 Image which allows for the dependancies to be installed as binaries, which means they're most likely very similar or the same to what the developers of these packages use.
+This uses a Ubuntu 16.04 Image which is freshly updated and allows for the dependancies to be installed as binaries, which means they're most likely very similar or the same to what the developers of these packages use.
 
 
 
@@ -20,6 +20,8 @@ This uses a Ubuntu 16.04 Image which allows for the dependancies to be installed
 3. Get this repo into your singularity vagrant VM with `git clone https://github.com/RGD2/icestormGitSing`
 4. `cd icestormGitSing`
 4. `make shell`
+
+## Usage
 
 The git repos are in `/opt` and you will be root within the singularity image.
 

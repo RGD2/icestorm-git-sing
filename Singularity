@@ -6,6 +6,7 @@ From: ubuntu:16.04
                      gawk tcl-dev libffi-dev git mercurial graphviz   \
                      xdot pkg-config python python3 libftdi-dev sudo vim 
 	
+	cd /opt
 	git clone https://github.com/cliffordwolf/icestorm
 	cd icestorm
 	make -j$(nproc)
