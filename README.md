@@ -17,8 +17,8 @@ This uses a Ubuntu 16.04 Image which is freshly updated and allows for the depen
 	- Use vagrant manager to install a minimal VM for Singularity as directed. I used singularity-2.4
 2. Be in 'vagrant@vagrant' shell you'll end up in, after following those instructions.
 	- see below for how to get back in here if you get lost
-3. Get this repo into your singularity vagrant VM with `git clone https://github.com/RGD2/icestormGitSing`
-4. `cd icestormGitSing`
+3. Get this repo into your singularity vagrant VM with `git clone https://github.com/RGD2/icestorm-git-sing`
+4. `cd icestorm-git-sing`
 4. `make shell`
 
 ## Usage
@@ -40,7 +40,7 @@ B. Open 'Git Bash' then:
     - `vagrant up`
     - `vagrand ssh`
 
-2. `cd icestormGitSing`
+2. `cd icestorm-git-sing`
 3. Reopen the Singularity image with: `make shell`
 
 ## Rebuilding with the absolute latest git versions
