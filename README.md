@@ -26,9 +26,14 @@ Finally, if you would like to contribute, you can do so from within the image (j
 	- see below for how to get back in here if you get lost
 3. Get this repo into your singularity vagrant VM with `git clone https://github.com/RGD2/icestorm-git-sing`
 4. `cd icestorm-git-sing`
-5. `make shell`
+
+- If you're not using windows, you can probably just install singularity as usual and skip to step 3.
+- For a *much* faster build (if you have the ram for it) git clone into `/dev/shm/`
+    - The whole image and build process will take place in a ram disk
 
 ## Usage
+
+    `make shell`
 
 The git repos are in `/opt` and you will be root within the singularity image.
 
@@ -38,6 +43,7 @@ If you're on windows (running with vagrant inside a virtualbox), then you need t
 
 CTRL-D a few times will do the trick. You will probably want to use Vagrant Manager to 'Halt' the VM too.
 Note that any changes to the image filesystem will be lost after singularity stops.
+If you find yourself needing to repeat steps, read the singularity documentation and use this built image as a base for your own singularity build recipe.
 
 ## Getting back in
 
@@ -55,6 +61,8 @@ B. Open 'Git Bash' then:
 
 2. `cd icestorm-git-sing`
 3. Reopen the Singularity image with: `make shell`
+
+Not on windows? `make shell`
 
 ## Rebuilding with the absolute latest git versions
 
