@@ -19,9 +19,10 @@ Finally, if you would like to contribute, you can do so from within the image (j
 
 # Installation instructions
 
-1. Install Singularity as per <https://singularity.lbl.gov/install-windows> (or relevant other instructions for your OS)
+1. Install Singularity as per <https://sylabs.io/guides/3.4/user-guide/installation.html#windows> (or relevant other instructions for your OS)
 	- Install vagrant, git for windows, virtualbox, and (if you like) vagrant manager.
 	- Use vagrant to install a minimal VM for Singularity as directed. I used singularity-2.4
+		- (open git-bash, run `vagrant init sylabs/singularity-3.4-ubuntu-bionic64 && vagrant init && vagrant up && vagrant ssh` )
 2. Be in 'vagrant@vagrant' shell you'll end up in, after following those instructions.
 	- see below for how to get back in here if you get lost
 3. Get this repo into your singularity vagrant VM with `git clone https://github.com/RGD2/icestorm-git-sing`
